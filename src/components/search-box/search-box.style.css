@@ -1,0 +1,16 @@
+.search {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid #e0e0e0;
+    box-shadow: black;
+    border-radius: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
