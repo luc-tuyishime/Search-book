@@ -12,14 +12,20 @@ const { REACT_APP_BASE_URL } = process.env;
 const App = () => {
   const [book, setBook] = useState("");
   const [result, setResult] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = async (e) => {
     const book = e.target.value;
     const bookMaxResult = `volumes?q=${book}`;
     setBook(book);
+    setLoading(true);
     const { data } = await axios.get(`${REACT_APP_BASE_URL}/${bookMaxResult}`);
     return data.items ? setResult([...data.items]) : [];
   }
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000)
 
   console.log('voilaa', result);
   return (
@@ -29,8 +35,8 @@ const App = () => {
         placeholder="search books"
         handleChange={handleChange}
       />
-      <CardList result={DisplayBook(result, book)}>
-      </CardList>
+      {loading && <div className="loader"></div>}
+      {!loading && <CardList result={DisplayBook(result, book)}></CardList>}
     </div>
   );
 }

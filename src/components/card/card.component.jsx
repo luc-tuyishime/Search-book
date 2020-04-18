@@ -10,7 +10,8 @@ export const Card = ({ book }) => {
                     ? ""
                     : `${book.volumeInfo.imageLinks.thumbnail}`} alt={book.volumeInfo.title} />
             </a>
-            <p><span className="text-color">Author:</span> {book.volumeInfo.authors === undefined ? "" : `${book.volumeInfo.authors[0]}`}</p>
+            <p><span className="text-color">Author:</span>
+                {book.volumeInfo.authors === undefined ? "" : `${book.volumeInfo.authors[0]}`}</p>
             <p><span className="text-color">Title:</span> {book.volumeInfo.title}</p>
             <p><span className="text-color">Publisher:</span> {book.volumeInfo.publisher}</p>
         </div>

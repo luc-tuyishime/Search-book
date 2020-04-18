@@ -14,3 +14,10 @@
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+
+@media only screen and (max-width: 768px) {
+    .search{
+        display: block !important;
+        margin: 0 auto !important;
+    }
+  }
