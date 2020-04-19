@@ -1,11 +1,11 @@
 import React from 'react';
 import { mount } from '../../../config/enzymeConfig';
 
-import App from '../../App';
+import ViewAllBooks from '../../page/ViewAllBooks';
 
 
 describe('<App /> test effect hooks', () => {
-    const container = mount(<App />);
+    const container = mount(<ViewAllBooks />);
     jest.useFakeTimers();
 
     it('should have the App component rendered', () => {
