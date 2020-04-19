@@ -4,4 +4,6 @@ export const DisplayBook = (result, book) => {
         return singleBook.volumeInfo.title.toLowerCase().includes(book.toLowerCase());
     });
     return filterBook
-}
+};
+
+
