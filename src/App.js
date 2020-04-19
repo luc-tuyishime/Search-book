@@ -27,7 +27,7 @@ const App = () => {
     setLoading(false);
   }, 3000)
 
-  console.log('voilaa', result);
+
   return (
     <div className="App">
       <h1>Search Book</h1>

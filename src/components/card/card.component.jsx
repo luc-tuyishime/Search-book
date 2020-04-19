@@ -2,7 +2,6 @@ import React from 'react';
 import './card.style.css';
 
 export const Card = ({ book }) => {
-    console.log(book.volumeInfo.title)
     return (
         <div className="card-container">
             <a target="_blank" rel="noopener noreferrer" href={book.volumeInfo.previewLink}>
