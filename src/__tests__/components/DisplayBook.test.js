@@ -1,6 +1,4 @@
 import React from 'react';
-import { shallow } from '../../../config/enzymeConfig';
-
 import { DisplayBook } from '../../helper/displayBook';
 
 let result = [

@@ -3,7 +3,6 @@ import { mount } from '../../../config/enzymeConfig';
 
 import ViewAllBooks from '../../page/ViewAllBooks';
 
-
 describe('<App /> test effect hooks', () => {
     const container = mount(<ViewAllBooks />);
     jest.useFakeTimers();
