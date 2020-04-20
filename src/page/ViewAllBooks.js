@@ -7,7 +7,6 @@ import { DisplayBook } from '../helper/displayBook';
 
 import '../App.css';
 
-
 const { REACT_APP_BASE_URL } = process.env;
 
 const ViewAllBooks = () => {
